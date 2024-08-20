@@ -2,293 +2,575 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Azam's Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="mediaqueries.css" />
+	<title>Muhammad Azam Afridi</title>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Academic Profile of Muhammad Azam Afridi">
+	<meta name="author" content="Muhammad Azam">
+	<link rel="shortcut icon" href="icon1.png">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+
+	<!-- Bootstrpa Icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+	<!-- FontAwesome JS -->
+	<script defer src="assets/fontawesome/js/all.js"></script>
+
+	<!-- Theme CSS -->
+	<link id="theme-style" rel="stylesheet" href="assets/css/shine.css">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://azamafridi23.github.io/">
+	<meta property="og:title" content="Muhammad Azam Afridi">
+	<meta property="og:description" content="Academic Profile of Muhammad Azam Afridi">
+	<meta property="og:image" content="https://azamafridi23.github.io/assets/images/azam_pic1.jpeg">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://azamafridi23.github.io/">
+	<meta property="twitter:title" content="Muhammad Azam Afridi">
+	<meta property="twitter:description" content="Academic Profile of Muhammad Azam Afridi">
+	<meta property="twitter:image" content="https://azamafridi23.github.io/assets/images/azam_pic1.jpeg">
 </head>
 
-<body>
-  <nav id="desktop-nav">
-    <div class="logo">MAF</div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-  <nav id="hamburger-nav">
-    <div class="logo">MAF</div>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-      </div>
-    </div>
-  </nav>
-  <section id="profile">
-    <div class="section__pic-container">
-      <img src="./assets/azam_pic.jpg" alt="John Doe profile picture" />
-    </div>
-    <div class="section__text">
-      <p class="section__text__p1">Hello, I'm</p>
-      <h1 class="title">Muhammad Azam Afridi</h1>
-      <p class="section__text__p2">AI Professional</p>
-      <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
-          Download CV
-        </button>
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">
-          Contact Info
-        </button>
-      </div>
-      <div id="socials-container">
-        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
-          onclick="location.href='http://linkedin.com/in/azam-afridi'" />
-        <img src="./assets/github.png" alt="My Github profile" class="icon"
-          onclick="location.href='https://github.com/azamafrIdi23'" />
-      </div>
-    </div>
-  </section>
-  <section id="about">
-    <p class="section__text__p1">Get To Know More</p>
-    <h1 class="title">About Me</h1>
-    <div class="section-container">
-      <div class="section__pic-container">
-        <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
-      </div>
-      <div class="about-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-            <h3>Experience</h3>
-            <ul style="list-style: none; padding-top: 5%;">
-              <li>
-                <p>- Machine Learning</p>
-              </li>
-              <li style="padding-top: 5%;">
-                <p>- Data Engineering</p>
-              </li>
-            </ul>
 
-          </div>
-          <div class="details-container">
-            <img src="./assets/education.png" alt="Education icon" class="icon" />
-            <h3>Education</h3>
-            <p style="padding-top: 5%;">Bachelor of Science In Artificial Intelligence</p>
-          </div>
-        </div>
-        <div class="text-container">
-          <p>
-            A dedicated final-year undergraduate specializing in Artificial Intelligence, possessing advanced
-            Python skills and a proven track record in developing impactful AI applications. With a keen focus on
-            Machine Learning and deep learning, I have successfully applied my expertise across various domains
-            including computer vision, natural language processing, data science, and reinforcement learning. I am
-            excited about the opportunity to contribute to stimulating AI projects
-          </p>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
-  </section>
-  <br>
-  <br>
-  <br>
-  <section id="experience">
-    <p class="section__text__p1">Explore My</p>
-    <h1 class="title">Experience</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="experience-sub-title">AI</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Sklearn</h3>
-                <!-- <p>Intermediate</p> -->
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Tensorflow</h3>
-                <!-- <p>Basic</p> -->
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Pytorch</h3>
-                <!-- <p>Basic</p> -->
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>OpenCV</h3>
-                <!-- <p>Intermediate</p> -->
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>NLTK</h3>
-                <!-- <p>Intermediate</p> -->
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Huggingface</h3>
-                <!-- <p>Intermediate</p> -->
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Langchain</h3>
-                <!-- <p>Intermediate</p> -->
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="details-container">
-          <h2 class="experience-sub-title">Development</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Django</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Flask</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>AWS</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Azure</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Git</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Docker</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>SQL/MongoDB</h3>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
-  </section>
-  <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Driver Drowsiness Detection System using Deep Learning</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/azamafridi23/Driver-Drowsiness-Detection-System'">
-              Github
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Movie Recommender System Using Machine Learning</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/azamafridi23/Movie-Recommender-System-Using-ML'">
-              Github
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Mutlilingual Video Translation and Context Specific Chatbot
-          </h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/azamafridi23/VideoTranslate-ChatQA'">
-              Github
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
-  </section>
-  <section id="contact">
-    <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-        <p><a href="mailto:azafridi9547@gmail.com">azafridi9547</a></p>
-      </div>
-      <div class="contact-info-container">
-        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-        <p><a href="http://linkedin.com/in/azam-afridi">azam-afridi</a></p>
-      </div>
-    </div>
-  </section>
-  <footer>
-    <nav>
-      <div class="nav-links-container">
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-  </footer>
-  <script src="script.js"></script>
+<body class="light-mode">
+
+	<div class="container-fluid">
+
+		<div class="main-content-wrapper">
+			<div class="container-fluid">
+				<div class="top-bar text-center position-relative">
+					<div class="top-bar-inner">
+
+						<ul class="social-list list-inline mx-auto">
+							<li class="list-inline-item me-0 me-md-1 me-lg-2"><a
+									href="http://linkedin.com/in/azam-afridi"><i
+										class="fa-brands fa-linkedin fa-fw"></i></a></li>
+							<li class="list-inline-item me-0 me-md-1 me-lg-2"><a href="https://github.com/azamafridi23"><i
+										class="fa-brands fa-github fa-fw"></i></a>
+							</li>
+							<!-- insert CV link -->
+							<li class="list-inline-item me-0 me-md-1 me-lg-2"><a
+									href="..."><i
+										class="fa-solid fa-file-pdf fa-fw"></i></a>
+							</li>
+							<li class="list-inline-item me-0 me-md-1 me-lg-2" style="display: none;"><a
+								href="..."><i
+									class="fa-brands fa-google fa-fw"></i></a></li>
+
+						</ul><!--//social-list-->
+
+					</div><!--//top-bar-inner-->
+
+				</div><!--//top-bar-->
+
+				<div class="resume-wrapper mx-auto rounded-2">
+					<div class="resume-header px-4 px-lg-5">
+						<div class="resume-profile-holder text-center">
+							<img class="resume-profile-pic rounded-circle" src="assets/images/azam_pic1.jpeg"
+								alt="image">
+
+							<h2 class="resume-name text-uppercase">Muhammad Azam Afridi</h2>
+							<div class="resume-role-title text-uppercase">Machine Learning Engineer</div>
+							<div class="resume-contact mt-4">
+								<i class="resume-contact-icon bi bi-envelope me-2"></i>azamafridi.ai@gmail.com &emsp;
+								<i class="resume-contact-icon bi bi-telephone me-2"></i>+92 (325) 9594992
+							</div>
+						</div><!--//profile-holder-->
+					</div><!--//resume-header-->
+
+					<div class="resume-body p-4 p-lg-5">
+						<div class="row">
+							<div class="col-main col-12 col-lg-8 pe-lg-4">
+								<section class="resume-summary-section resume-section">
+									<h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-2 py-lg-3"><i
+											class="resume-section-heading-icon bi bi-person me-2"></i>About Me</h3>
+									<div class="resume-summary-desc">
+										<p style="font-size:15.5px;">
+											I am currently working as a Machine Learning Engineer at 99 Technologies
+											Pvt. Ltd. Prior to this, I was an undergraduate student at the Ghulam Ishaq
+											Khan Institute of Engineering Sciences and Technology (GIKI), where I
+											graduated with a Bachelor's degree in Artificial Intelligence. I was awarded
+											a gold medal for being the highest-ranked student in my faculty.
+											Additionally, I served as a research assistant at the Artificial
+											Intelligence (AI) Lab under the supervision of Dr. Khurram Khan Jadoon. My
+											final year project involved developing a multilingual video translator and a
+											video-based question-answering system using multimodal AI models.
+											<br><br>
+
+											I have a keen interest in natural language processing and data science, and
+											I am particularly passionate about applying cutting-edge AI techniques to
+											tackle the evolving challenges of real-world applications. Through my
+											academic achievements and professional experience, I am committed to
+											fostering innovation and enhancing the practical impact of AI solutions.
+										</p>
+									</div>
+								</section><!--//resume-section-->
+
+								<hr>
+
+								<section class="resume-experience-section resume-section">
+									<h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3"><i
+											class="resume-section-heading-icon bi bi-briefcase me-2"></i>Experience</h3>
+									<div class="resume-timeline position-relative">
+
+										<article class="resume-timeline-item position-relative pb-1">
+											<div class="resume-timeline-item-header mb-1">
+												<div class="resume-position-meta d-flex justify-content-between mb-2">
+													<div class="resume-position-time">May 2024 - Present</div>
+													<div class="resume-company-name">99 Technologies Pvt. Ltd
+													</div>
+												</div>
+												<h3 class="resume-position-title mb-2">ML Engineer</h3>
+											</div><!--//resume-timeline-item-header-->
+											<div class="resume-timeline-item-desc">
+												<ul class="resume-timeline-list">
+													<li style="font-size:.95em" ;>Data Scraping Optimization: Led the
+														development and optimization of a data scraper using the
+														Selenium framework to efficiently collect Amazon marketplace
+														data. Reduced scraping time by over 27%, enhancing the speed and
+														efficiency of data acquisition for subsequent analysis.</li>
+													<li style="font-size:.95em" ;>Data Preprocessing and Analysis:
+														Executed comprehensive data cleaning and exploratory data
+														analysis (EDA) on time series data to extract meaningful
+														insights and statistics related to product sales. Ensured data
+														quality and readiness for advanced machine learning
+														applications.</li>
+													<li style="font-size:.95em" ;>Predictive Modeling: Applied advanced
+														statistical models, such as Seasonal Autoregressive Integrated
+														Moving Average (SARIMA), and deep learning techniques, including
+														Long Short-Term Memory (LSTM) networks, to forecast sales of
+														refurbished computers on Amazon. Achieved a low Mean Absolute
+														Error (MAE), demonstrating the accuracy and effectiveness of the
+														predictive models.</li>
+												</ul>
+											</div><!--//resume-timeline-item-desc-->
+										</article><!--//resume-timeline-item-->
+
+										<article class="resume-timeline-item position-relative pb-2">
+											<div class="resume-timeline-item-header mb-1">
+												<div class="resume-position-meta d-flex justify-content-between mb-2">
+													<div class="resume-position-time">April 2023 - May 2024</div>
+													<div class="resume-company-name">Artificial Intelligence (AI) Lab
+													</div>
+												</div>
+												<h3 class="resume-position-title mb-2">Research Assistant</h3>
+											</div><!--//resume-timeline-item-header-->
+											<div class="resume-timeline-item-desc">
+												<ul class="resume-timeline-list">
+													<li style="font-size:.95em" ;>Multilingual Video Translation and
+														Question Answering Models: Conducted research on developing
+														scalable and accurate models for multilingual video translation
+														and video-based question answering. Focused on enhancing model
+														performance and integration for diverse linguistic and
+														multimedia contexts.</li>
+													<li style="font-size:.95em" ;>Experimentation with AI Models:
+														Evaluated and implemented various AI models, including:
+
+														<ul>
+															<li><strong>Automatic Speech Recognition:</strong> Utilized
+																OpenAI's Whisper for transcribing audio to text.</li>
+															<li><strong>Machine Translation:</strong> Applied Meta's
+																NLLB (No Language Left Behind) and
+																Helsinki-NLP/opus-mt-en-ur for translating between
+																languages. Fine-tuned the Helsinki-NLP/opus-mt-en-ar
+																model on TED Talks dataset, improving BLEU score by 11
+																points for more accurate translation of scientific
+																terminology.</li>
+															<li><strong>Speech Synthesis:</strong> Employed Meta's MMS
+																and Azure TTS models for generating natural-sounding
+																speech from text.</li>
+														</ul>
+													<li style="font-size:.95em">Integration of Multimodal Capabilities:
+														Integrated OpenAI's GPT-4 to leverage its multimodal
+														capabilities, enabling advanced visual question answering and
+														enhancing the system's ability to process and respond to complex
+														queries involving both text and images.</li>
+												</ul>
+											</div><!--//resume-timeline-item-desc-->
+										</article><!--//resume-timeline-item-->
+
+										<article class="resume-timeline-item position-relative pb-1">
+											<div class="resume-timeline-item-header mb-1">
+												<div class="resume-position-meta d-flex justify-content-between mb-2">
+													<div class="resume-position-time">Jun 2023 - Aug 2023 </div>
+													<div class="resume-company-name">Kavtech Solutions (Private) Ltd
+													</div>
+												</div>
+												<h3 class="resume-position-title mb-2">Python Intern</h3>
+											</div><!--//resume-timeline-item-header-->
+											<div class="resume-timeline-item-desc">
+												<ul class="resume-timeline-list">
+													<li style="font-size:.95em" ;>Built data engineering pipelines using
+														Python Panda’s and Pentaho software. </li>
+													<li style="font-size:.95em" ;>Successfully automated Pentaho reports
+														and jobs with Python’s Pandas library, enhancing data processing
+														efficiency.</li>
+													<li style="font-size:.95em" ;>Developed proficiency in Amazon Web
+														Services (AWS), including storage solutions, deployment
+														strategies,
+														and efficient data management.</li>
+												</ul>
+											</div><!--//resume-timeline-item-desc-->
+										</article><!--//resume-timeline-item-->
+
+										<article class="resume-timeline-item position-relative pb-0">
+											<div class="resume-timeline-item-header mb-1">
+												<div class="resume-position-meta d-flex justify-content-between mb-2">
+													<div class="resume-position-time">Jan 2021 – Jun 2021 </div>
+													<div class="resume-company-name">Ghulam Ishaq Khan Institute of
+														Engineering Sciences and Technology (GIKI)</div>
+												</div>
+												<h3 class="resume-position-title mb-2">Teacher Assistant</h3>
+											</div><!--//resume-timeline-item-header-->
+											<div class="resume-timeline-item-desc">
+												<ul class="resume-timeline-list">
+													<li style="font-size:.95em" ;>Conducted thorough grading of quizzes
+														and assignments for the CE121 course. </li>
+													<li style="font-size:.95em" ;>Provided dedicated mentoring and
+														support to students enrolled in the CE121 course. </li>
+													<li style="font-size:.95em" ;>Managed attendance for the CE121
+														course (Digital Logic and Design). </li>
+												</ul>
+											</div><!--//resume-timeline-item-desc-->
+										</article><!--//resume-timeline-item-->
+
+									</div><!--//resume-timeline-->
+								</section><!--//resume-experience-section-->
+
+								<hr>
+
+								<style>
+									.publication-title {
+										text-align: left;
+									}
+
+									.publication-info {
+										font-size: 14.5px;
+										display: flex;
+										justify-content: space-between;
+										align-items: flex-start;
+										flex-wrap: wrap;
+									}
+
+									.publication-links {
+										white-space: nowrap;
+									}
+								</style>
+								<section class="resume-experience-section resume-section">
+									<h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3"><i
+											class="resume-section-heading-icon bi bi-journal me-2"></i>Projects &
+										Publications</h3>
+									<h3 class="resume-position-title mb-1">Projects</h3>
+									<ul class="resume-publication-list">
+										<li style="font-size:.9em;">
+											<div class="publication-title">
+												<b>Multilingual Video Translator and Video Based QA System</b>
+												<a href="https://github.com/azamafridi23/2024-AI-Challenge-NatLearn" target="_blank" style="color: Red;">GitHub</a>
+											</div>
+											<div class="publication-info">
+												<div>
+													<p>Developed a video translation web application supporting more
+														than 28 languages using advanced AI models. Integrated a
+														context-aware chatbot to respond to queries based on video
+														content.</p>
+													<ul>
+														<li>Utilized OpenAI’s Whisper for speech-to-text, Meta’s NLLB
+															model for text translation, and Microsoft Azure’s Speech API
+															for multilingual translation.</li>
+														<li>Fine-tuned the Helsinki-NLP/opus-mt-en-ar model on TED Talks
+															dataset, improving BLEU score by 11 points for more accurate
+															translation of scientific terminology.</li>
+														<li>Built an intelligent chatbot using OpenAI GPT-3.5 with
+															Retrieval Augmented Generation (RAG) for context-aware
+															responses.</li>
+														<li>Deployed the application on Azure’s nct4-v3 Virtual Machine.
+														</li>
+													</ul>
+													<br>
+												</div>
+											</div>
+										</li>
+										<li style="font-size:.9em;"> <!--https://github.com/azamafridi23/Driver-Drowsiness-Detection-System-->
+											<div class="publication-title">
+												<b>Driver drowsiness detection application
+													using CNN & YOLO </b>
+												<a href="https://github.com/azamafridi23/Driver-Drowsiness-Detection-System" target="_blank" style="color: Red;">GitHub</a>
+											</div>
+											<div class="publication-info">
+												<div>
+													<p>Developed an AI-driven driver drowsiness detection system using
+														CNNs and the YOLO algorithm to assess
+														drowsiness based on facial features, achieving 73% and 81%
+														accuracy, respectively. The system proactively alerts
+														the driver with an alarm when drowsiness surpasses a predefined
+														threshold. </p>
+												</div>
+											</div>
+										</li>
+									</ul>
+									<div style="display: none;">
+										<h3 class="resume-position-title mb-1">Conferences</h3>
+										<ul class="resume-publication-list">
+											<li style="font-size:.9em;">
+												<div class="publication-title"><b>Enhanced ABC</b></div>
+												<div class="publication-info">
+													<div>
+														<em><u>Muhammad Azam</u>, Rajab Ali, Jawad, </em><br>
+														Submitted to <b>FIT 2025</b>&nbsp;&nbsp;
+														<a href="" style="color: #ff9c2a;"
+															target="_blank">[Manuscript]</a>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</section>
+
+
+								<section class="resume-summary-section resume-section">
+									<hr>
+									<h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-2 py-lg-3"><i
+											class="resume-section-heading-icon bi bi-person me-2"></i>Awards & Accolades
+									</h3>
+
+									<div class="resume-summary-desc" style="line-height:100%;">
+										<ul class="resume-timeline-list">
+											<li style="font-size:.88em; position: relative;">
+												<p class="date" style="position: absolute; right: 0; top: 0;">Jun 2024</p>
+												<h6>Faculty Gold Medal</h6>
+												<p>Received the Faculty Gold Medal for best academic performance among all candidates for the degree of Bachelor of Science in Artificial Intelligence at GIK Institute.</p>
+											</li>
+											<li style="font-size:.88em; position: relative;">
+												<p class="date" style="position: absolute; right: 0; top: 0;">2020 - 2024</p>
+												<h6>Dean's Honor Certificates</h6>
+												<p>Received the Dean's Honor Certificate, awarded to students with a distinction in an academic semester, in six out of eight semesters.</p>
+											</li>
+											<li style="font-size:.88em; position: relative;">
+												<p class="date" style="position: absolute; right: 0; top: 0;">May 2024</p>
+												<h6>Lab2Market Project Competition Winner</h6>
+												<p>My project, NatLearn, secured 1st position in the Lab2Market competition at the Artificial Intelligence Expo and Conference for the best AI-based project at Pak-Austria Fachhochschule Institute of Applied Sciences and Technology, winning a prize of 100,000 PKR.</p>
+											</li>
+											<li style="font-size:.88em; position: relative;">
+												<p class="date" style="position: absolute; right: 0; top: 0;">March 2024</p>
+												<h6>Numaish Competition Winner</h6>
+												<p>My final year project, Multilingual Video Translator and RAG Chatbot, won the Numaish Competition sponsored by Motive for the Best Computer Science Domain Project Award across Pakistan at NaSCon, FAST NUCES Islamabad, Pakistan (2024), earning a cash prize of 50,000 PKR.</p>
+											</li>
+											<li style="font-size:.88em; position: relative;">
+												<p class="date" style="position: absolute; right: 0; top: 0;">2022-2023</p>
+												<h6>GIKI Alumni Association FA Merit (Scholarship)</h6>
+											</li>
+										</ul>
+									</div>
+									
+
+								</section><!--//resume-section-->
+							</div>
+
+
+							<div class="col-12 col-lg-4 ps-lg-4">
+								<hr>
+								<section class="resume-educate-section resume-section">
+									<h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3"><i
+											class="resume-section-heading-icon bi bi-book me-2"></i>Education</h3>
+									<ul class="list-unstyled">
+										<li class="mb-2">
+											<div class="resume-degree font-weight-bold">BS in Artificial Intelligence
+											</div>
+											<div class="resume-degree-org">Ghulam Ishaq Khan Institute of Engineering
+												Sciences and Technology (GIKI), Pakistan</div>
+											<div class="resume-degree-time">Sep. 2020 - June 2024</div>
+											<div class="resume-degree-time"><strong>CGPA</strong>: 3.75/4.00</div>
+											<div class="resume-degree-time"><strong>Faculty Gold Medalist</strong></div>
+
+										</li>
+										<li class="mb-2">
+											<div class="resume-degree font-weight-bold">Higher Secondary School Examination
+											</div>
+											<div class="resume-degree-org">Pakistan School and College Salalah, Oman
+											</div>
+											<div class="resume-degree-time">Mar. 2018 - Apr. 2020</div>
+									</ul>
+								</section><!--//resume-section-->
+
+								<hr>
+
+								<section class="resume-skills-section resume-section">
+									<h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3"><i
+											class="resume-section-heading-icon bi bi-person-gear me-2"></i>Research
+										Interests</h3>
+									<ul class="list-inline">
+										<li class="list-inline-item"><span class="badge resume-skill-badge">Natural
+												Language Processing (NLP)</span></li>
+										<li class="list-inline-item"><span class="badge resume-skill-badge">Large
+												Language Models (LLMs)</span></li>
+										<li class="list-inline-item"><span class="badge resume-skill-badge">Computer Vision</span>
+										</li>
+										<li class="list-inline-item"><span class="badge resume-skill-badge">Machine
+												Learning</span></li>
+										<li class="list-inline-item"><span class="badge resume-skill-badge">Deep
+												Learning</span></li>
+									</ul>
+								</section><!--//resume-section-->
+								<hr>
+
+								<section class="resume-skills-section resume-section">
+									<h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3"><i
+											class="resume-section-heading-icon bi bi-gear me-2"></i>Technical
+										Skills
+									</h3>
+
+									<ul class="list-unstyled">
+										<li class="mb-2">
+											<div class="resume-skill-name">Python</div>
+											<div class="progress resume-progress" role="progressbar"
+												aria-label="Basic example" aria-valuenow="95" aria-valuemin="0"
+												aria-valuemax="100">
+												<div class="progress-bar resume-progress-bar" style="width: 95%">
+												</div>
+											</div>
+										</li>
+										<li class="mb-2">
+											<div class="resume-skill-name">Tensorflow</div>
+											<div class="progress resume-progress" role="progressbar"
+												aria-label="Basic example" aria-valuenow="87" aria-valuemin="0"
+												aria-valuemax="100">
+												<div class="progress-bar resume-progress-bar" style="width: 85%">
+												</div>
+											</div>
+										</li>
+										<li class="mb-2">
+											<div class="resume-skill-name">Huggingface</div>
+											<div class="progress resume-progress" role="progressbar"
+												aria-label="Basic example" aria-valuenow="87" aria-valuemin="0"
+												aria-valuemax="100">
+												<div class="progress-bar resume-progress-bar" style="width: 86%">
+												</div>
+											</div>
+										</li>
+										<li class="mb-2">
+											<div class="resume-skill-name">Langchain</div>
+											<div class="progress resume-progress" role="progressbar"
+												aria-label="Basic example" aria-valuenow="90" aria-valuemin="0"
+												aria-valuemax="100">
+												<div class="progress-bar resume-progress-bar" style="width: 83%">
+												</div>
+											</div>
+										</li>
+										<li class="mb-2">
+											<div class="resume-skill-name">Opencv</div>
+											<div class="progress resume-progress" role="progressbar"
+												aria-label="Basic example" aria-valuenow="90" aria-valuemin="0"
+												aria-valuemax="100">
+												<div class="progress-bar resume-progress-bar" style="width: 75%">
+												</div>
+											</div>
+										</li>
+										<li class="mb-2">
+											<div class="resume-skill-name">Django</div>
+											<div class="progress resume-progress" role="progressbar"
+												aria-label="Basic example" aria-valuenow="90" aria-valuemin="0"
+												aria-valuemax="100">
+												<div class="progress-bar resume-progress-bar" style="width: 70%">
+												</div>
+											</div>
+										</li>
+										<li class="mb-2">
+											<div class="resume-skill-name">Selenium</div>
+											<div class="progress resume-progress" role="progressbar"
+												aria-label="Basic example" aria-valuenow="77" aria-valuemin="0"
+												aria-valuemax="100">
+												<div class="progress-bar resume-progress-bar" style="width: 82%">
+												</div>
+											</div>
+										</li>
+									</ul>
+
+								</section><!--//resume-section-->
+
+								<hr>
+
+								<section class="resume-projects-section resume-section" style="display: none;">
+									<h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3"><i
+											class="resume-section-heading-icon bi bi-code-slash me-2"></i>Projects
+									</h3>
+									<div class="item">
+										<h4 class="item-heading"><i class="item-icon bi bi-square-fill me-2"></i><a
+												href="">AB Proj</a></h4>
+										<div class="item-desc">
+											abc
+										</div>
+									</div>
+								</section>
+
+								<!-- <hr> -->
+
+								<section class="resume-lang-section resume-section">
+									<h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3"><i
+											class="resume-section-heading-icon bi bi-translate me-2"></i>Languages
+									</h3>
+									<ul class="list-unstyled resume-lang-list">
+										<li class="mb-2">
+											<div class="resume-lang-name">English: IELTS Academic Band 8</div>
+											<div class="resume-level-indicator row gx-0 flex-nowrap">
+												<div class="col"><span class="item item-full"></span></div>
+												<div class="col"><span class="item item-full"></span></div>
+												<div class="col"><span class="item item-full"></span></div>
+												<div class="col"><span class="item item-full"></span></div>
+												<div class="col"><span class="item item-full"></span></div>
+												<div class="col"><span class="item item-full"></span></div>
+												<div class="col"><span class="item item-full"></span></div>
+												<div class="col"><span class="item item-full"></span></div>
+												<div class="col"><span class="item item-full"></span></div>
+												<div class="col"><span class="item"></span></div>
+											</div><!--//resume-level-indicator-->
+										</li>
+										<li class="mb-2">
+											<div class="resume-lang-name">Urdu (Native)</div>
+											<div class="resume-level-indicator row gx-0 flex-nowrap">
+												<div class="col"><span class="item item-full"></span></div>
+												<div class="col"><span class="item item-full"></span></div>
+												<div class="col"><span class="item item-full"></span></div>
+												<div class="col"><span class="item item-full"></span></div>
+												<div class="col"><span class="item item-full"></span></div>
+												<div class="col"><span class="item item-full"></span></div>
+												<div class="col"><span class="item item-full"></span></div>
+												<div class="col"><span class="item item-full"></span></div>
+												<div class="col"><span class="item item-full"></span></div>
+												<div class="col"><span class="item item-half"></span></div>
+											</div><!--//resume-level-indicator-->
+										</li>
+									</ul>
+								</section>
+
+
+
+							</div><!--//col-side-->
+						</div><!--//row-->
+					</div><!--//resume-body-->
+				</div><!--//resume-wrapper-->
+			</div><!--//container-fluid-->
+		</div><!--//main-content-wrapper-->
+
+
+	</div><!--//row-->
+
+	</div><!--//container-->
+
+	<footer class="footer text-center py-4">
+		<!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+		<small class="copyright">Template by <a href="http://themes.3rdwavemedia.com/" target="_blank">Xiaoying
+				Riley</a></a></small>
+	</footer>
+
 </body>
-
-</html>
