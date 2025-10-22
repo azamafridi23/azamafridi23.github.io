@@ -1,5 +1,10 @@
+# Force GitHub Pages to serve JavaScript files with correct MIME type
 *.js text/javascript
-*.css text/css
 *.mjs text/javascript
-*.ts text/javascript
-*.tsx text/javascript
+*.css text/css
+*.html text/html
+*.json text/json
+
+# Ensure all JavaScript files are treated as text/javascript
+dist/assets/*.js text/javascript
+dist/*.js text/javascript
