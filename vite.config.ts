@@ -20,6 +20,7 @@ export default defineConfig(({ mode }) => ({
     outDir: 'dist',
     assetsDir: 'assets',
     sourcemap: false,
+    target: 'es2015',
     rollupOptions: {
       output: {
         manualChunks: undefined,
