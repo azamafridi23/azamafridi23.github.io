@@ -66,7 +66,7 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden py-4 space-y-2">
+          <div className="md:hidden py-4 space-y-2 bg-background border-t border-border shadow-xl">
             {navLinks.map((link) => (
               <a
                 key={link.href}
