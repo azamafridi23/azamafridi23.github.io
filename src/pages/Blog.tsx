@@ -17,13 +17,13 @@ const Blog = () => {
     : blogs;
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background flex flex-col">
       <Navigation />
 
-      <main className="max-w-4xl mx-auto px-6 pt-32 pb-24">
+      <main className="max-w-4xl mx-auto px-6 pt-36 pb-24 flex-1 w-full">
         {/* Header Section */}
-        <div className="mb-12 animate-fade-in">
-          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl mb-4">
+        <div className="mb-6 animate-fade-in">
+          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-4xl mb-3">
             Technical Blog
           </h1>
           <p className="text-lg text-muted-foreground">

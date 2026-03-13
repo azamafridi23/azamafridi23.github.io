@@ -2,8 +2,11 @@ import { useParams, Link, Navigate } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import rehypeHighlight from "rehype-highlight";
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
 // Important: highlight.js CSS provides the colors for code blocks
-import 'highlight.js/styles/atom-one-dark.css'; 
+import 'highlight.js/styles/atom-one-dark.css';
+import 'katex/dist/katex.min.css';
 import { getBlogBySlug } from "@/lib/blog";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -15,7 +18,7 @@ import { Calendar, ArrowLeft } from "lucide-react";
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
-  
+
   if (!slug) return <Navigate to="/blog" replace />;
 
   const post = getBlogBySlug(slug);
@@ -27,16 +30,16 @@ const BlogPost = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      
-      <main className="max-w-3xl mx-auto px-6 pt-32 pb-24 animate-fade-in">
-        <Link 
+
+      <main className="max-w-3xl mx-auto px-6 pt-36 pb-24 animate-fade-in">
+        <Link
           to="/blog"
           className="inline-flex items-center text-sm text-muted-foreground hover:text-primary transition-colors mb-8"
         >
           <ArrowLeft className="w-4 h-4 mr-2" />
           Back to all posts
         </Link>
-        
+
         {/* Post Header */}
         <header className="mb-12 border-b border-border/40 pb-10">
           <div className="flex items-center gap-3 mb-6">
@@ -52,11 +55,11 @@ const BlogPost = () => {
               })}
             </div>
           </div>
-          
+
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6 leading-tight">
             {post.title}
           </h1>
-          
+
           <p className="text-xl text-muted-foreground leading-relaxed">
             {post.description}
           </p>
@@ -65,11 +68,12 @@ const BlogPost = () => {
         {/* Markdown Content Rendering */}
         <article className="prose prose-slate dark:prose-invert lg:prose-lg max-w-none">
           <ReactMarkdown
-            rehypePlugins={[rehypeRaw, rehypeHighlight]}
+            remarkPlugins={[remarkMath]}
+            rehypePlugins={[rehypeRaw, rehypeKatex, rehypeHighlight]}
             components={{
               // Add custom formatting overrides if needed
-              img: (({node, ...props}) => <img className="rounded-lg border border-border shadow-md my-8 w-full" {...props} />),
-              a: (({node, ...props}) => <a className="text-primary hover:underline" target="_blank" rel="noopener noreferrer" {...props} />),
+              img: (({ node, ...props }) => <img className="rounded-lg border border-border shadow-md my-8 w-full" {...props} />),
+              a: (({ node, ...props }) => <a className="text-primary hover:underline" target="_blank" rel="noopener noreferrer" {...props} />),
             }}
           >
             {post.content}

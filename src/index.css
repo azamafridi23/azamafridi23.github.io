@@ -111,12 +111,13 @@ All colors MUST be HSL.
     @apply text-2xl md:text-3xl;
   }
 
-  section {
-    @apply py-16 md:py-24;
-  }
 }
 
 @layer utilities {
+  .portfolio-section {
+    @apply py-16 md:py-24;
+  }
+
   .section-alt {
     @apply bg-[hsl(var(--section-background))];
   }
