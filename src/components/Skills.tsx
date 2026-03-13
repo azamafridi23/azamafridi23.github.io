@@ -31,7 +31,7 @@ const skillsData = {
 
 const Skills = () => {
   return (
-    <section id="skills" className="section-alt">
+    <section id="skills" className="portfolio-section section-alt">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
