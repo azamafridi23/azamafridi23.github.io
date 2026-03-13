@@ -1,5 +1,5 @@
 ---
-title: "Understanding Eigenvectors and Eigenvalues"
+title: "Dummy Blog2: Understanding Eigenvectors and Eigenvalues"
 date: "2024-03-12"
 category: "Linear Algebra"
 description: "A deep dive into how eigenvectors affect linear transformations and their applications."
