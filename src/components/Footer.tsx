@@ -2,13 +2,16 @@ const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground py-8">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
-          <p className="text-sm">
-            © {new Date().getFullYear()} Azam Afridi. All rights reserved.
-          </p>
-          <p className="text-xs mt-2 opacity-80">
-            Built with React, TypeScript, and Tailwind CSS
-          </p>
+        <div className="flex flex-col items-center gap-4 text-center">
+          <img src="https://count.getloli.com/get/@azamafridi23?theme=rule34" alt="Visitors Badge" />
+          <div>
+            <p className="text-sm">
+              © {new Date().getFullYear()} Azam Afridi. All rights reserved.
+            </p>
+            <p className="text-xs mt-2 opacity-80">
+              Built with React, TypeScript, and Tailwind CSS
+            </p>
+          </div>
         </div>
       </div>
     </footer>
