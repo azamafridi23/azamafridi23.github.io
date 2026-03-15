@@ -3,6 +3,7 @@ import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import rehypeHighlight from "rehype-highlight";
 import remarkMath from "remark-math";
+import remarkGfm from "remark-gfm";
 import rehypeKatex from "rehype-katex";
 // Important: highlight.js CSS provides the colors for code blocks
 import 'highlight.js/styles/atom-one-dark.css';
@@ -68,7 +69,7 @@ const BlogPost = () => {
         {/* Markdown Content Rendering */}
         <article className="prose prose-slate dark:prose-invert lg:prose-lg max-w-none">
           <ReactMarkdown
-            remarkPlugins={[remarkMath]}
+            remarkPlugins={[remarkMath, remarkGfm]}
             rehypePlugins={[rehypeRaw, rehypeKatex, rehypeHighlight]}
             components={{
               // Add custom formatting overrides if needed
