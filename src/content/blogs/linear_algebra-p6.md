@@ -5,6 +5,10 @@ category: "Linear Algebra"
 description: "Transformations between different dimensions (2D to 3D or 3D to 2D), and how nonsquare matrices map information across vector spaces."
 --- 
 
+*In [Part 5](./linear_algebra-p5), we analyzed square matrices, which map space to the same dimension (like 2D to 2D or 3D to 3D). But the world isn't always square. Sometimes we need to project a 3D object onto a 2D screen, or embed a 1D line into 3D space.*
+
+<hr>
+
 ## 1. What is a Nonsquare Matrix?
 
 A **nonsquare matrix** is a matrix whose number of rows and columns are different.
@@ -138,4 +142,8 @@ So they can rotate, stretch, and shear **without changing dimension**.
 
 > Nonsquare matrices **change the dimensionality** of space.
 
+<hr>
 
+*In this post, we expanded our toolkit to nonsquare matrices, learning how transformations can embed lower dimensions into higher ones, or project higher dimensions down into lower ones.*
+
+**Next up:** *We know how to map between dimensions. But how do we mathematically measure the alignment between two vectors? In [Part 7: The Dot Product and Duality](./linear_algebra-p7), we will introduce a new tool that is essential for understanding projections and angles.*

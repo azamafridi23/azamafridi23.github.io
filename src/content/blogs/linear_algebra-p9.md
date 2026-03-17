@@ -5,6 +5,10 @@ category: "Linear Algebra"
 description: "Expressing the same vector in different coordinate systems, the change of basis matrix, and how to transform matrices across different bases."
 --- 
 
+*In [Part 8](./linear_algebra-p8), we explored the cross product, which gives us a way to generate orthogonal vectors in our standard 3D space. But what if our standard x, y, z grid isn't the best way to look at a problem? Sometimes, changing our perspective makes complex math simple.*
+
+<hr>
+
 ## 1. What is a Basis?
 
 A **basis** is a set of vectors that define a coordinate system.
@@ -136,3 +140,8 @@ But in a basis **aligned with its eigenvectors**, it becomes simple scaling.
 
 ----
 
+<hr>
+
+*In this post, we learned that vectors and transformations are absolute, but the coordinate numbers we use to describe them depend entirely on our chosen basis. We saw how to translate between different perspectives using a change of basis matrix.*
+
+**Next up:** *If changing our basis can simplify transformations, is there a "perfect" basis for any given matrix? One where the transformation is nothing but simple stretching? In the final post of our series, [Part 10: Eigenvectors and Eigenvalues](./linear_algebra-p10), we will discover how to find these natural axes.*

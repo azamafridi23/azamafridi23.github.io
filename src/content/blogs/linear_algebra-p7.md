@@ -5,6 +5,10 @@ category: "Linear Algebra"
 description: "Measuring vector alignment, the projection interpretation, and the 'duality' idea where vectors can represent linear functions."
 --- 
 
+*In [Part 6](./linear_algebra-p6), we explored how matrices can project vectors between different dimensions. Now we turn to a specialized tool that measures how vectors align with one another, which is the foundation for calculating projections and angles.*
+
+<hr>
+
 ## 1. What is the Dot Product?
 
 For two vectors:
@@ -133,5 +137,8 @@ The dot product connects many ideas:
 
 > Matrix multiplication uses **dot products of rows and columns**.
 
----
+<hr>
 
+*In this post, we saw that the dot product is much more than a formula—it’s a geometric measure of alignment and projection. We also touched on the elegant idea of "duality," where a vector can be viewed as a linear transformation.*
+
+**Next up:** *The dot product gives us a scalar measuring alignment. Is there a counterpart that gives us a vector measuring perpendicularity? In [Part 8: The Cross Product](./linear_algebra-p8), we will explore the tool used to find orthogonal directions and compute areas in 3D.*

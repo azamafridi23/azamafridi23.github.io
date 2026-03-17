@@ -5,6 +5,10 @@ category: "Linear Algebra"
 description: "Thinking of matrices as functions rather than grids, the rules of linear transformations, and how tracking basis vectors reveals what a matrix actually does."
 --- 
 
+*In [Part 1](./linear_algebra-p1), we learned that vectors are the building blocks of space, defined by a basis. But what happens when we want to map those vectors to new locations? This brings us to the core of linear algebra: transformations.*
+
+<hr>
+
 ## 1. What is a Matrix? (Matrices as Transformations of Spaces)
 
 > **Key Idea:** In linear algebra, a matrix represents a **transformation of space**. Instead of thinking of matrices as numbers in a grid, think of them as **functions that transform vectors**.
@@ -125,3 +129,8 @@ This means the result is a **linear combination of the matrix columns**. So:
 > 2. See where the matrix moves them
 > 3. Rebuild the vector using those new directions
 
+<hr>
+
+*In this post, we shifted our perspective to view matrices as linear transformations—functions that stretch, rotate, or shear space. By tracking where the basis vectors go (the columns of the matrix), we can understand exactly what any matrix does to the entire space.*
+
+**Next up:** *If one matrix represents a single transformation, what happens when we apply multiple transformations sequentially? In [Part 3: Matrix Multiplication](./linear_algebra-p3), we will see that multiplying matrices is simply the act of composing their transformations.*

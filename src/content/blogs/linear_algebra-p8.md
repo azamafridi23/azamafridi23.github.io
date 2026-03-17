@@ -5,6 +5,10 @@ category: "Linear Algebra"
 description: "Finding perpendicular vectors in 3D, calculating the area of parallelograms, and the right-hand rule for orientation."
 --- 
 
+*In [Part 7](./linear_algebra-p7), we used the dot product to measure how much vectors align. But often we need the exact opposite: we need to find directions that are completely perpendicular to what we have. For that, we need the cross product.*
+
+<hr>
+
 ## 1. What is the Cross Product?
 
 The cross product takes two 3D vectors and produces another vector:
@@ -125,5 +129,8 @@ The cross product represents the **oriented area vector**:
 | **Dot product**   | How aligned vectors are                    | Scalar |
 | **Cross product** | How much vectors form a perpendicular area | Vector |
 
-----
+<hr>
 
+*In this post, we learned how the cross product takes two vectors in 3D and outputs a third vector that is perfectly orthogonal to both, with a magnitude equal to the area they span.*
+
+**Next up:** *We have built a strong intuition for transformations and their properties within our standard coordinate grid. But what if our grid isn't the best way to look at the problem? In [Part 9: Change of Basis](./linear_algebra-p9), we will learn how to shift our entire perspective.*

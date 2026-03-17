@@ -5,6 +5,10 @@ category: "Linear Algebra"
 description: "Undoing transformations with inverse matrices, the 'reach' of a matrix (column space), and the vectors that disappear into the origin (null space)."
 --- 
 
+*In [Part 4](./linear_algebra-p4), we used the determinant to measure how transformations scale space. Most importantly, we learned that a determinant of zero means space collapses into a lower dimension. But what happens if it doesn't collapse? Can we undo the transformation? And if it does collapse, where do all those squashed vectors go?*
+
+<hr>
+
 ## 1. What are Inverse Matrices?
 
 ### Meaning
@@ -169,4 +173,8 @@ Input space → Transformation → Output space
 | **Null space**     | Inputs that become zero                  | Which vectors disappear   |
 | **Inverse matrix** | Transformation that reverses the process | Undoes the transformation |
 
-----
+<hr>
+
+*In this post, we discovered how inverse matrices let us reverse engineer transformations—provided the space hasn't collapsed. We also explored the "column space" (everything we can reach) and the "null space" (everything that gets destroyed).*
+
+**Next up:** *Up to now, we've mostly looked at square grids mapping to square grids (like 2D to 2D). What if we want to map a 2D plane into a 3D world? In [Part 6: Nonsquare Matrices](./linear_algebra-p6), we will explore transformations that natively change dimensions.*

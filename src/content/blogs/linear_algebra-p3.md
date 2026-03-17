@@ -5,6 +5,10 @@ category: "Linear Algebra"
 description: "Applying multiple transformations sequentially, why matrix multiplication represents composition, and the geometric reason why order matters."
 --- 
 
+*In [Part 2](./linear_algebra-p2), we discovered that matrices act as functions that transform space, with their columns revealing exactly where the basis vectors land. But what if we want to rotate space and then immediately stretch it? Let's explore how we combine these actions.*
+
+<hr>
+
 ## 1. Applying Multiple Transformations
 
 Sometimes we apply two transformations sequentially.
@@ -117,3 +121,8 @@ When multiplying matrices:
 
 Matrix multiplication calculates the **combined effect**.
 
+<hr>
+
+*In this post, we saw that matrix multiplication is not just a rote calculation—it represents the geometric composition of multiple transformations. We also learned why the order of these transformations fundamentally changes the final outcome.*
+
+**Next up:** *Now that we can transform and combine spaces, we need a way to measure how much these transformations stretch or squash our geometry. In [Part 4: The Determinant](./linear_algebra-p4), we will learn how to measure the scaling factor of any transformation.*

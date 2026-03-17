@@ -5,6 +5,10 @@ category: "Linear Algebra"
 description: "The distinction between points and vectors, standard basis vectors, linear combinations, and the concept of span and basis."
 --- 
 
+*Welcome to Part 1 of my Linear Algebra series! In this series, we will build a visual and intuitive understanding of linear algebra. We begin here with the fundamental building blocks: vectors, and how they combine to create space.*
+
+<hr>
+
 ## 1. What is a Vector?
 
 In Linear Algebra, a **vector represents a displacement (direction + magnitude)**.
@@ -161,3 +165,8 @@ $$(3,2) = 2(1,1) + 1(1,-1)$$
 | **Span**               | All positions you can reach using those vectors               |
 | **Basis**              | The smallest set of vectors that can generate the whole space |
 
+<hr>
+
+*In this post, we explored vectors as arrows in space, how scaling and adding them (linear combinations) allows us to reach different positions (span), and the minimal set of vectors needed to define our coordinate system (basis).*
+
+**Next up:** *Now that we understand the building blocks, how do we move or manipulate them? In [Part 2: Matrices as Linear Transformations](./linear_algebra-p2), we will discover that matrices aren't just grids of numbers—they are functions that transform our vector spaces.*

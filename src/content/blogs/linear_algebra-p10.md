@@ -5,6 +5,10 @@ category: "Linear Algebra"
 description: "Identifying 'special' vectors that stay on their own span during a transformation, calculating eigenvalues, and the power of diagonalization."
 --- 
 
+*In [Part 9](./linear_algebra-p9), we learned how changing our basis can shift our perspective and simplify mathematical operations. Now, we reach the culmination of our journey: finding the most natural basis for a transformation, built from its very own invariant axes.*
+
+<hr>
+
 ## 1. What Are Eigenvectors?
 
 When a matrix transforms space, most vectors rotate, stretch, and change direction. But some special vectors **only stretch or shrink** — their direction does not change.
@@ -149,3 +153,7 @@ change basis → scale → change back
 | ---------------- | ------------------------------------------ |
 | **Eigenvectors** | Invariant directions of the transformation |
 | **Eigenvalues**  | How much those directions stretch          |
+
+<hr>
+
+*In this final post, we explored eigenvectors and eigenvalues—the inherent geometric properties of a transformation. By using these as our basis, we can decouple complex matrices into simple diagonal scaling operations.*

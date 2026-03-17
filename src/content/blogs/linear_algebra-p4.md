@@ -5,6 +5,10 @@ category: "Linear Algebra"
 description: "The geometric intuition of area and volume scaling, orientation flips (negative determinants), and what it means when space collapses to a lower dimension (det = 0)."
 --- 
 
+*In [Part 3](./linear_algebra-p3), we learned that matrix multiplication allows us to compose multiple transformations into one. As we stretch, shear, and warp space, the geometric properties like area and volume inevitably change. Our next tool gives us a precise way to measure this.*
+
+<hr>
+
 ## 1. What is the Determinant?
 
 The determinant of a matrix describes how a linear transformation **scales space**:
@@ -159,3 +163,9 @@ Scaling factors multiply. Example: scale by 2, then by 3 → total scaling = 6.
 > 1. **Scale** of area or volume
 > 2. **Orientation** (sign)
 > 3. **Whether space collapses** ($\det = 0$)
+
+<hr>
+
+*In this post, we explored the determinant as a geometric measuring tool. It encodes scaling (area/volume change), orientation (whether space flips), and most importantly, it tells us if our transformation collapses space into a lower dimension (when the determinant is zero).*
+
+**Next up:** *If a transformation collapses space, information is lost. But if it doesn't, can we reverse the process? In [Part 5: Inverses, Column Space, and Null Space](./linear_algebra-p5), we will look at how to undo transformations mathematically, and what happens to the vectors that get squashed precisely to zero.*
