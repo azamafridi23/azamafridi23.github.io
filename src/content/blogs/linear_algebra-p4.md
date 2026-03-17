@@ -7,22 +7,32 @@ description: "The geometric intuition of area and volume scaling, orientation fl
 
 ## 1. What is the Determinant?
 
-The determinant of a matrix tells us how a linear transformation **scales area or volume**.
+The determinant of a matrix describes how a linear transformation **scales space**:
 
-For a 2×2 matrix:
+- In 2D → determinant measures **area scaling**
+- In 3D → determinant measures **volume scaling**
+
+$$\text{new area} = |\det(A)| \times \text{original area}$$
+
+$$\text{new volume} = |\det(A)| \times \text{original volume}$$
+
+> The **sign** of the determinant tells us whether the transformation flips orientation.
+
+---
+
+## 2. Determinant Formula (2×2 Case)
 
 $$A = \begin{bmatrix} a & b \\ c & d \end{bmatrix}$$
 
 $$\det(A) = ad - bc$$
 
-> But the formula is not the important part. The real meaning is:
-> **How much the transformation changes area.**
+> The formula is not the main idea — the **geometric interpretation** is.
 
 ---
 
-## 2. Intuition (Area Scaling)
+## 3. Determinant as a Scaling Factor
 
-Imagine the unit square:
+Consider the unit square:
 ```
 (0,1) ┌───┐
       │   │
@@ -30,13 +40,11 @@ Imagine the unit square:
 (0,0) └───┘ (1,0)
 ```
 
-Area = 1
-
-Now apply a matrix transformation:
+Area = 1. Now apply:
 
 $$A = \begin{bmatrix} 2 & 0 \\ 0 & 1 \end{bmatrix}$$
 
-This stretches the x-direction by 2. New shape:
+This stretches the x-axis by 2. The square becomes a rectangle:
 ```
 (0,1) ┌──────┐
       │      │
@@ -44,104 +52,110 @@ This stretches the x-direction by 2. New shape:
 (0,0) └──────┘ (2,0)
 ```
 
-Area = 2, so $\det(A) = 2$
+New area = 2, so $\det(A) = 2$.
 
-> The transformation **doubles the area**.
+> The determinant is the **area scaling factor**.
 
 ---
 
-## 3. Why Basis Vectors Matter
+## 4. Why the Columns of the Matrix Matter
 
-Matrix columns show where basis vectors move.
-
-**Original basis:**
+A matrix transforms the basis vectors:
 
 $$e_1 = \begin{bmatrix} 1 \\ 0 \end{bmatrix}, \quad e_2 = \begin{bmatrix} 0 \\ 1 \end{bmatrix}$$
 
-**Matrix:**
+For:
 
 $$A = \begin{bmatrix} 2 & 1 \\ 1 & 1 \end{bmatrix}$$
-
-Means:
 ```
 e1 → (2,1)
 e2 → (1,1)
 ```
 
-These two vectors form a parallelogram.
-
-> **The area of that parallelogram = determinant.**
+These vectors form a **parallelogram**.
 
 ---
 
-## 4. Geometric Interpretation
+## 5. Determinant = Area of the Parallelogram
 
-The determinant measures the **area of the parallelogram** formed by the transformed basis vectors.
+After transformation, the unit square becomes a parallelogram formed by:
 
 $$e_1' = (2,1), \quad e_2' = (1,1)$$
 
-Area = determinant.
+The area of this parallelogram is exactly $\det(A)$.
+
+For a shape with original area $S$:
+
+$$\text{new area} = |\det(A)| \times S$$
 
 ---
 
-## 5. Determinant Sign
+## 6. Determinant Sign (Orientation)
 
-The determinant can be positive or negative.
+| Determinant | Meaning |
+|-------------|---------|
+| Positive | Orientation preserved |
+| Negative | Orientation flipped (reflection occurred) |
 
-| Sign | Meaning |
-|------|---------|
-| Positive | Orientation preserved (counterclockwise stays counterclockwise) |
-| Negative | Orientation flips (e.g. reflection — clockwise → counterclockwise) |
+**Example of orientation flip:**
+```
+counterclockwise basis → clockwise
+```
+
+> The magnitude represents scaling, the sign represents orientation.
 
 ---
 
-## 6. When Determinant = 0
+## 7. When the Determinant is Zero
 
-If the determinant is zero, the transformation **squashes space into a lower dimension**.
-```
-square → line
-```
-
-Area becomes 0.
+If $\det(A) = 0$, the transformation **collapses space** into a lower dimension.
 
 **Example:**
 
 $$A = \begin{bmatrix} 1 & 2 \\ 2 & 4 \end{bmatrix}$$
 
-Columns are multiples of each other, so the square collapses into a line.
+Columns $(1,2)$ and $(2,4)$ lie on the same line, so:
+```
+square → line
+```
 
-$$\det(A) = 0$$
+Area becomes 0, therefore $\det(A) = 0$.
 
-> This matrix is **not invertible**.
-
----
-
-## 7. Determinant in 3D
-
-In 3D, the determinant represents **volume scaling**.
-
-For a $3 \times 3$ matrix $A$:
-- Original cube volume = $1$
-- After transformation = $\det(A)$
-
-**Example:** $\det(A) = 3$ → volume becomes 3 times larger.
+> Such a matrix is **not invertible**.
 
 ---
 
-## 8. Key Properties
+## 8. Determinant in 3D
 
-**1. Determinant measures scaling:**
+In 3D, the determinant measures **volume scaling**.
 
-$$\det(A) = \text{area or volume scale}$$
+Starting with a unit cube (volume = 1), after transformation by $A$:
 
-**2. Determinant of the identity matrix:**
+$$\text{new volume} = |\det(A)|$$
+
+**Example:** $\det(A) = 3$ → the cube becomes a parallelepiped with volume 3.
+
+---
+
+## 9. Important Properties
+
+**Identity matrix:**
 
 $$I = \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}, \quad \det(I) = 1$$
 
 No scaling occurs.
 
-**3. Determinant of composition:**
+**Composition of transformations:**
 
 $$\det(AB) = \det(A)\det(B)$$
 
-> Scaling factors multiply.
+Scaling factors multiply. Example: scale by 2, then by 3 → total scaling = 6.
+
+---
+
+## The Key Idea
+
+> The determinant encodes three things simultaneously:
+> 1. **Scale** of area or volume
+> 2. **Orientation** (sign)
+> 3. **Whether space collapses** ($\det = 0$)
