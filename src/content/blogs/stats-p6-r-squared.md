@@ -21,6 +21,9 @@ or equivalently:
 
 Both interpretations are mathematically the same.
 
+![Visualization of R-Squared](/blog-images/stats-p6-r-squared/r-squared.png)
+*Image source: "StatQuest with Josh Starmer" video on ["Linear Regression, Clearly Explained!!!"](https://www.youtube.com/watch?v=7ArmBVF2dCs)*
+
 ---
 
 ## 2️⃣ Why We Compare Against the Mean
@@ -203,6 +206,15 @@ Because it tells how much of the variation in $y$ is determined by $x$.
 
 **Example:**
 If $R^2 = 0.66$, then 66% of the changes in $y$ can be explained by $x$.
+
+---
+
+## 1️⃣2️⃣ Relationship with F-Score
+
+The $p$-value for $R^2$ comes from the **F-score**. While $R^2$ tells us *how much* variation is explained, the F-score helps us determine if this explained variation is statistically significant.
+
+![Visualization of F-Score](/blog-images/stats-p6-r-squared/f-score.png)
+*Image source: "StatQuest with Josh Starmer" video on ["Linear Regression, Clearly Explained!!!"](https://www.youtube.com/watch?v=7ArmBVF2dCs)*
 
 ---
 
