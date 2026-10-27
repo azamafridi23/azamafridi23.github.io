@@ -1,5 +1,6 @@
 ---
-title: "Dummy Blog1: Building Intelligent AI Agents from Scratch"
+title: "Building Intelligent AI Agents from Scratch"
+draft: true
 date: "2024-03-15"
 category: "AI Agents"
 description: "Exploring the architecture and components required to build autonomous agents using LLMs."

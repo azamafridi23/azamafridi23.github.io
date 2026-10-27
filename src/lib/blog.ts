@@ -29,7 +29,7 @@ function parseFrontmatter(fileContent: string) {
     const yamlString = match[1];
     const content = match[2];
     try {
-      const data = yaml.load(yamlString) as Record<string, any>;
+      const data = yaml.load(yamlString) as Record<string, unknown>;
       return { data, content };
     } catch (e) {
       console.error("Error parsing YAML frontmatter:", e);
@@ -43,21 +43,22 @@ function parseFrontmatter(fileContent: string) {
 
 
 export function getAllBlogs(): BlogPost[] {
-  const posts: BlogPost[] = Object.entries(markdownFiles).map(([filepath, rawContent]) => {
+  const posts: BlogPost[] = Object.entries(markdownFiles).flatMap(([filepath, rawContent]) => {
     // Extract the filename without the .md extension to use as a URL slug
     const slug = filepath.replace('/src/content/blogs/', '').replace('.md', '');
     
     const fileString = String(rawContent);
     const { data, content } = parseFrontmatter(fileString);
+    if (data.draft === true) return [];
 
-    return {
+    return [{
       slug,
-      title: data?.title || 'Untitled Post',
-      date: data?.date || '',
-      category: data?.category || 'Uncategorized',
-      description: data?.description || '',
+      title: typeof data.title === 'string' ? data.title : 'Untitled Post',
+      date: typeof data.date === 'string' ? data.date : '',
+      category: typeof data.category === 'string' ? data.category : 'Uncategorized',
+      description: typeof data.description === 'string' ? data.description : '',
       content: content,
-    };
+    }];
   });
 
   // Sort posts by date, descending (newest first)

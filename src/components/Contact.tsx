@@ -1,12 +1,6 @@
-import { Mail, Github, Linkedin, FileText, MapPin, ChevronDown, Download } from "lucide-react";
+import { Mail, Github, Linkedin, MapPin } from "lucide-react";
 import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+import CVLinks from "./CVLinks";
 
 const contactInfo = [
   {
@@ -82,63 +76,7 @@ const Contact = () => {
           </div>
 
           <div className="text-center">
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button size="lg" className="gap-2">
-                  <FileText className="h-5 w-5" />
-                  Download CV
-                  <ChevronDown className="h-4 w-4" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="center">
-                <div className="p-2">
-                  <div className="flex items-center justify-between p-2 hover:bg-accent rounded-sm">
-                    <span className="text-sm font-medium">Academic CV</span>
-                    <div className="flex items-center gap-2">
-                      <a
-                        href="https://drive.google.com/file/d/1V4E0KzQ4mk_Is93ruChB7-RdsGVVjzhf/view?usp=sharing"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="p-1 hover:bg-accent rounded"
-                        title="View Academic CV"
-                      >
-                        <FileText className="h-4 w-4" />
-                      </a>
-                      <a
-                        href="https://drive.google.com/uc?export=download&id=1V4E0KzQ4mk_Is93ruChB7-RdsGVVjzhf"
-                        download="Academic_CV_Muhammad_Azam_Afridi.pdf"
-                        className="p-1 hover:bg-accent rounded"
-                        title="Download Academic CV"
-                      >
-                        <Download className="h-4 w-4" />
-                      </a>
-                    </div>
-                  </div>
-                  <div className="flex items-center justify-between p-2 hover:bg-accent rounded-sm">
-                    <span className="text-sm font-medium">Professional Resume</span>
-                    <div className="flex items-center gap-2">
-                      <a
-                        href="https://drive.google.com/file/d/1xZs61LRvjvAU6QjTI67MSBO3y2e04zTf/view?usp=sharing"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="p-1 hover:bg-accent rounded"
-                        title="View Professional Resume"
-                      >
-                        <FileText className="h-4 w-4" />
-                      </a>
-                      <a
-                        href="https://drive.google.com/uc?export=download&id=1xZs61LRvjvAU6QjTI67MSBO3y2e04zTf"
-                        download="Professional_Resume_Muhammad_Azam_Afridi.pdf"
-                        className="p-1 hover:bg-accent rounded"
-                        title="Download Professional Resume"
-                      >
-                        <Download className="h-4 w-4" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </DropdownMenuContent>
-            </DropdownMenu>
+            <CVLinks />
           </div>
         </div>
       </div>

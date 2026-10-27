@@ -3,41 +3,27 @@ import { Card } from "@/components/ui/card";
 
 const experienceData = [
   {
-    title: "Data Scientist",
-    company: "Tkxel",
-    period: "March 2025 – Sep 2025",
-    location: "Islamabad, Pakistan",
-    description:
-      "Worked as a Data Scientist / AI Engineer (Hybrid Role), specializing in Large Language Models, Machine Learning, and Backend Development.",
+    title: "AI Engineer", company: "Tkxel", period: "Mar 2025 – Sep 2025", location: "Lahore, Pakistan",
+    description: "Built enterprise AI systems for Insphere, Tkxel’s GenAI platform.",
     achievements: [
-      "Led the development of AI agents for Insphere, Tkxel's enterprise GenAI platform, leveraging Python, FastAPI, PostgreSQL, Redis, and modern agentic frameworks (LangChain, LangGraph, LlamaIndex)",
-      "Collaborated with enterprise clients in pre-sales engagements, delivering tailored demonstrations of Insphere's capabilities and implementing customized solutions for their use cases",
-      "Contributed to bridging AI research and production deployment, ensuring optimized performance and real-world adaptability",
+      "Built multi-agent orchestration coordinating specialized sub-agents for multi-step reasoning and task delegation.",
+      "Designed an Agentic RAG architecture with LangChain and LangGraph, cutting response latency by 15% and improving retrieval accuracy by 7% over baseline.",
+      "Developed backend services and ingestion pipelines with FastAPI, PostgreSQL, and Redis; assessed client requirements and recommended AI solution opportunities.",
     ],
   },
   {
-    title: "AI Engineer",
-    company: "Ninety Nine Technologies",
-    period: "Jun 2024 – March 2025",
-    location: "Islamabad, Pakistan",
-    description:
-      "Designed and implemented AI-driven solutions to automate processes and improve system efficiency.",
+    title: "AI Engineer", company: "Ninety Nine Technologies", period: "Jun 2023 – Mar 2025", location: "Islamabad, Pakistan",
+    description: "Developed multimodal retrieval systems and scalable data pipelines.",
     achievements: [
-      "Designed and implemented an AI Agent–driven workflow to automate BIOS provisioning, reducing manual intervention and improving system efficiency",
-      "Developed and scaled a data collection pipeline into a parallel processing system, where throughput increased proportionally with the number of running instances",
+      "Built multimodal RAG over company documents in Google Drive, automatically updating the vector database as source documents changed.",
+      "Integrated text and vision embeddings with LLMs and VLMs to process and retrieve information from text, images, audio, and video.",
+      "Re-engineered sequential product scraping into concurrent execution, increasing data collection throughput by 10×.",
     ],
   },
   {
-    title: "Research Assistant",
-    company: "GIK Institute of Engineering Sciences and Technology",
-    period: "Aug 2023 – Jun 2024",
-    location: "Topi, Pakistan",
-    description:
-      "Conducted research on developing scalable and accurate systems for multilingual video translation and video-based question answering at the Artificial Intelligence (AI) Lab under the supervision of Dr. Khurram Khan Jadoon.",
-    achievements: [
-      "Fine-tuned the Helsinki-NLP/opus-mt-en-ar model using the Web Inventory of Transcribed and Translated Talks (WIT3) dataset, improving the BLEU score by 6 points for more accurate translation of scientific terminology",
-      "Integrated OpenAI's GPT-4 to leverage its multimodal capabilities, enabling advanced visual question answering and enhancing the system's ability to process and respond to complex queries involving both text and images",
-    ],
+    title: "Research Assistant", company: "GIK Institute of Engineering Sciences and Technology", period: "Aug 2023 – Jun 2024", location: "Topi, Pakistan",
+    description: "Researched multilingual video translation and video-based question answering under Dr. Khurram Khan Jadoon.",
+    achievements: ["Combined speech recognition, text-to-speech, machine translation, vision-language models, and OCR to support understanding of spoken and visual video content."],
   },
 ];
 
@@ -68,7 +54,7 @@ const Experience = () => {
                         {exp.period}
                       </span>
                     </div>
-                    <p className="text-accent font-medium mb-3">{exp.company}</p>
+                    <p className="text-accent font-medium mb-3">{exp.company} <span className="text-sm text-muted-foreground font-normal">· {exp.location}</span></p>
                     <p className="text-foreground/80 mb-4">{exp.description}</p>
                     <ul className="space-y-2">
                       {exp.achievements.map((achievement, i) => (

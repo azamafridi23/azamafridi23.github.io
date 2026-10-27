@@ -134,3 +134,12 @@ git push origin main
 ## 📄 License & Credits
 
 Designed and developed by Azam Afridi. All rights reserved.
+
+## Portfolio content updates
+
+- Research lives in `src/components/Research.tsx`, including the paper and code links.
+- Featured projects live in `src/components/Projects.tsx`; only include a Demo link when a real demo exists.
+- Replace `public/cv/Muhammad-Azam-Afridi-CV.pdf` to update both CV buttons. The current copy is from October 2026.
+- Add `draft: true` to blog frontmatter to keep unfinished posts out of listings and direct post routes. Draft content remains in the repository and is not private.
+- Awards and selected writing are maintained in `Awards.tsx` and `Writing.tsx`.
+- `public/social-preview.svg` is the editable source for the 1200 × 630 PNG used in social metadata. Regenerate the PNG when changing it.

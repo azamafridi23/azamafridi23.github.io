@@ -2,31 +2,12 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 const skillsData = {
-  "Programming Languages": ["Python", "Java", "C++", "JavaScript", "TypeScript", "R", "SQL"],
-  "AI/ML Frameworks": [
-    "TensorFlow",
-    "PyTorch",
-    "Scikit-learn",
-    "Keras",
-    "Hugging Face",
-    "OpenCV",
-  ],
-  "Data Science": [
-    "Pandas",
-    "NumPy",
-    "Matplotlib",
-    "Seaborn",
-    "Jupyter",
-    "Statistical Analysis",
-  ],
-  "Web Development": ["React", "Node.js", "FastAPI", "Django", "REST APIs", "Docker"],
-  "Tools & Platforms": ["Git", "AWS", "Google Cloud", "Linux", "PostgreSQL", "MongoDB"],
-  "Research Skills": [
-    "Experimental Design",
-    "Technical Writing",
-    "Literature Review",
-    "Data Visualization",
-  ],
+  "Programming": ["Python", "JavaScript"],
+  "LLMs & Agents": ["LangChain", "LangGraph", "Agentic RAG", "Multi-agent Systems", "Language Models"],
+  "Machine Learning & Multimodal AI": ["PyTorch", "TensorFlow", "Hugging Face", "PEFT / LoRA", "Vision-Language Models", "Object Detection", "OCR"],
+  "Backend & Data": ["FastAPI", "Django", "PostgreSQL", "pgvector", "Redis", "Celery"],
+  "Cloud & Development": ["AWS", "Azure", "Docker", "Git"],
+  "Research & Evaluation": ["Experimental Design", "Prompting Strategies", "Benchmark Evaluation", "Statistical Analysis", "Technical Writing"],
 };
 
 const Skills = () => {

@@ -3,19 +3,19 @@ import { Card } from "@/components/ui/card";
 
 const educationData = [
   {
-    degree: "Erasmus Mundus Master of Science in Linguistic Data Science (EMLDS)",
+    degree: "Erasmus Mundus Joint MSc in Linguistic Data Science (EMLDS)",
     institution: "Consortium of: Universidade NOVA de Lisboa (Portugal), Università Cattolica del Sacro Cuore (Italy), University of Zaragoza (Spain)",
     period: "Sep 2025 – Present",
     description:
-      "• Focus: Natural Language Processing, Computational Linguistics, and Deep Learning for Language Understanding",
-    gpa: "Global intake: less than 4%",
+      "Fully funded Erasmus Mundus scholarship.\nCoursework: Machine Learning & Deep Learning, Language Models, NLP, Speech Processing.",
+    gpa: "Weighted average: 29.46/30 · Three of four completed examinations: 30 e lode (October 2026)",
   },
   {
     degree: "Bachelor of Science in Artificial Intelligence",
     institution: "GIK Institute of Engineering Sciences and Technology",
     period: "Sep 2020 – Jun 2024",
     description:
-      "• Gold Medalist (Rank: 1/55)\n• Thesis: Multilingual Video Translator & Chatbot System using LLMs",
+      "• Gold Medalist (Rank: 1/55)\n• Thesis: LLM-Powered Multilingual Video Translation and Multimodal Question Answering",
     gpa: "Cumulative GPA: 3.75/4.0",
   },
 ];

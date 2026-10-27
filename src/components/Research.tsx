@@ -1,66 +1,26 @@
-import { FileText, ExternalLink } from "lucide-react";
+import { FileText, Github } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
-const researchData = [
-  {
-    title: "Quality over Quantity: Data Concentration is Key for Parameter-Efficient Domain Adaptation",
-    authors: "Muhammad Azam Afridi, Rajab Ali, Khurram Khan Jadoon",
-    venue: "[under progress]",
-    abstract:
-      "This research explores the critical role of data concentration in parameter-efficient domain adaptation, demonstrating that quality and strategic data selection significantly outperform quantity-based approaches in achieving effective model adaptation with minimal parameter updates.",
-    links: {
-      paper: "#",
-      code: "#",
-    },
-  },
-];
-
-const Research = () => {
-  return (
-    <section id="research" className="portfolio-section section-alt">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="font-bold mb-4">Research & Publications</h2>
-            <div className="w-20 h-1 bg-gradient-to-r from-[hsl(var(--gradient-start))] to-[hsl(var(--gradient-end))] mx-auto rounded-full"></div>
-          </div>
-
-          <div className="space-y-8">
-            {researchData.map((paper, index) => (
-              <Card
-                key={index}
-                className="p-6 border-[hsl(var(--card-border))] card-hover"
-              >
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center">
-                    <FileText className="h-6 w-6 text-accent" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-semibold mb-2">{paper.title}</h3>
-                    <p className="text-sm text-muted-foreground mb-2">{paper.authors}</p>
-                    <p className="text-sm text-accent font-medium mb-4">{paper.venue}</p>
-                    <p className="text-foreground/80 mb-4">{paper.abstract}</p>
-                    <div className="flex flex-wrap gap-3">
-                      <Button variant="outline" size="sm" className="gap-2">
-                        <FileText className="h-4 w-4" />
-                        Paper
-                        <ExternalLink className="h-3 w-3" />
-                      </Button>
-                      <Button variant="outline" size="sm" className="gap-2">
-                        <ExternalLink className="h-4 w-4" />
-                        Code
-                      </Button>
-                    </div>
-                  </div>
-                </div>
-              </Card>
-            ))}
-          </div>
+const Research = () => (
+  <section id="research" className="portfolio-section section-alt">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+      <div className="text-center mb-10"><h2 className="mb-4">Research</h2><p className="text-muted-foreground">Studying how demonstration selection improves LLM-based structured prediction.</p></div>
+      <Card className="p-6 md:p-8 border-[hsl(var(--card-border))]">
+        <p className="text-sm font-medium text-accent mb-3">arXiv preprint · October 2026</p>
+        <h3 className="text-xl md:text-2xl mb-3">POS-Signature Demonstration Retrieval for In-Context Dependency Parsing</h3>
+        <p className="text-sm text-muted-foreground mb-5">Muhammad Azam Afridi, Rajab Ali, Marco Passarotti</p>
+        <p className="text-foreground/80 leading-relaxed mb-5">Can examples with similar grammatical structure help a language model parse sentences better than examples with similar meaning? I designed a retrieval method combining part-of-speech statistics and length filtering, and benchmarked six prompting strategies across two open-weight LLMs.</p>
+        <div className="grid sm:grid-cols-3 gap-4 mb-5">
+          {[ ["+1.9 / +2.7 pp", "LAS over semantic retrieval"], ["2,077", "English-EWT test sentences"], ["2 models", "gpt-oss-120b · Qwen2.5-72B"] ].map(([value, label]) => <div key={label} className="rounded-lg bg-secondary p-4"><p className="text-xl font-semibold mb-1">{value}</p><p className="text-xs text-muted-foreground">{label}</p></div>)}
         </div>
-      </div>
-    </section>
-  );
-};
-
+        <p className="text-sm text-muted-foreground mb-6">Paired-bootstrap 95% confidence intervals exclude zero for both improvements. Findings are scoped to English-EWT; prompts, archived outputs, and evaluation code are available for reproduction.</p>
+        <div className="flex flex-wrap gap-3">
+          <Button asChild><a href="https://arxiv.org/abs/2610.31966" target="_blank" rel="noopener noreferrer"><FileText className="mr-2 h-4 w-4" />Paper</a></Button>
+          <Button variant="outline" asChild><a href="https://github.com/azamafridi23/pos-signature-parsing" target="_blank" rel="noopener noreferrer"><Github className="mr-2 h-4 w-4" />Code</a></Button>
+        </div>
+      </Card>
+    </div>
+  </section>
+);
 export default Research;

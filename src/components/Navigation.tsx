@@ -5,10 +5,10 @@ import ThemeToggle from "./ThemeToggle";
 
 const navLinks = [
   { href: "/#about", label: "About" },
-  { href: "/#education", label: "Education" },
-  { href: "/#experience", label: "Experience" },
-  // { href: "/#research", label: "Research" },
+  { href: "/#research", label: "Research" },
   { href: "/#projects", label: "Projects" },
+  { href: "/#experience", label: "Experience" },
+  { href: "/#education", label: "Education" },
   { href: "/#skills", label: "Skills" },
   { href: "/#contact", label: "Contact" },
   { href: "/blog", label: "Blog" },
@@ -33,8 +33,8 @@ const Navigation = () => {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <a href="https://azamafridi23.github.io/" className="text-xl font-bold gradient-text">
-            Portfolio
+          <a href="/" className="text-xl font-bold gradient-text">
+            Azam Afridi
           </a>
 
           {/* Desktop Navigation */}
@@ -63,6 +63,8 @@ const Navigation = () => {
             <Button
               variant="ghost"
               size="icon"
+              aria-label={isMobileMenuOpen ? "Close navigation" : "Open navigation"}
+              aria-expanded={isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}

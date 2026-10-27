@@ -8,17 +8,24 @@ import Skills from "@/components/Skills";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
+import Awards from "@/components/Awards";
+import Writing from "@/components/Writing";
+
 const Index = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <Hero />
-      <Education />
-      <Experience />
-      {/* <Research /> */}
-      <Projects />
-      <Skills />
-      <Contact />
+      <main>
+        <Hero />
+        <Research />
+        <Projects />
+        <Experience />
+        <Education />
+        <Awards />
+        <Skills />
+        <Writing />
+        <Contact />
+      </main>
       <Footer />
     </div>
   );

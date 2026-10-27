@@ -24,10 +24,10 @@ const Blog = () => {
         {/* Header Section */}
         <div className="mb-6 animate-fade-in">
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-4xl mb-3">
-            Technical Blog
+            Writing & Learning Notes
           </h1>
           <p className="text-lg text-muted-foreground">
-            Notes, tutorials, and deep dives into AI, Data Science, and Software Development.
+            Learning notes on statistics and linear algebra, alongside writing on AI systems and research.
           </p>
         </div>
 
